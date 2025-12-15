@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[UTF]{ctex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{academicons}
+\usepackage{xcolor}
+
+% Page layout
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\pagestyle{empty}
+
+% Colors
+\definecolor{darkblue}{RGB}{25,25,112}
+\definecolor{lightgray}{RGB}{128,128,128}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    citecolor=darkblue
+}
+
+% Custom section formatting
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{15pt}{8pt}
+
+% Custom commands
+\newcommand{\cvitem}[2]{\noindent\textbf{#1} \hfill #2}
+\newcommand{\cvsubitem}[1]{\noindent\textit{#1}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries\color{darkblue} 何孫興 Sun-Hsing Ho (Samson)}
+    
+    \vspace{8pt}
+    
+\begin{tabular}{c|c|c|c}
+    \href{https://orcid.org/0009-0002-1134-299X}{\textcolor[HTML]{A6CE39}{\aiOrcid} ORCID} & 
+    \faEnvelope\ \href{mailto:b13209041@g.ntu.edu.tw}{b13209041@g.ntu.edu.tw} & 
+    \faFacebook\ \href{https://www.facebook.com/samson.ho.0929}{Facebook Profile} 
+\end{tabular}
+
+\end{center}
+
+\vspace{10pt}
+
+% Education
+\section{Education}
+
+\cvitem{National Taiwan University}{August 2025 -- Present}
+\\
+\cvsubitem{Department of Atmospheric Sciences}
+% NTU 不標示成績
+
+\vspace{10pt}
+
+\cvitem{National Central University}{September 2024 -- August 2025}
+\\
+\cvsubitem{Department of Atmospheric Sciences}
+\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+    \item Overall GPA: 3.754/4.30 (PR 86)
+\end{itemize}
+
+\vspace{10pt}
+
+\vspace{10pt}
+
+% Working & Intern Experience
+\section{Working $\&$ Intern Experience}
+
+\cvitem{Adjunct Assistant, IMAQS Laboratory}{July 2025 -- Present}
+\\
+\cvsubitem{National Central University, Department of Atmospheric Sciences}
+\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+    \item Developing ML AQP model using Temporal Fusing Transformer.
+\end{itemize}
+
+\vspace{10pt}
+
+\cvitem{Quant Study Group: NTUFC x Kronos}{September 2025 -- Present}
+\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=0pt,partopsep=0pt,parsep=0pt]
+    \item Learning basic quant knowledge and attending a trading competition with group members.
+\end{itemize}
+
+\vspace{10pt}
+
+% Academic Achievements
+\section{Academic Achievements}
+
+\noindent\textbf{University Entrance Examination Performance:}
+\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+    \item 2023 NCU Department of Atmospheric Sciences: 特殊選才 \textbf{榜首}
+    \item 2025 NTU Department of Atmospheric Sciences: 轉學考 \textbf{榜首}
+\end{itemize}
+
+\vspace{5pt}
+
+\noindent\textbf{Competition Results:}
+\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+    \item 2023 International Virtual Science Symposium: 3 Stars Badge, Data Scientist Badge, Impact Badge
+    \item 2023 地球科學學科能力競賽: 初選佳作
+\end{itemize}
+
+\vspace{10pt}
+
+% Certifications and Qualifications
+\section{Certifications $\&$ Qualifications}
+
+\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+    \item IELTS Academic: 7.0/9.0 (C1 Level)
+    \item TOEIC Listening $\&$ Reading: 940/990 (Gold Certificate)
+    \item Emergency Medical Technician - 1 (EMT-1)
+\end{itemize}
+
+\end{document}
