@@ -1,18 +1,14 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[UTF]{ctex}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[12pt,a4paper]{article}
+\usepackage[fontset=fandol]{ctex}
 \usepackage{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{graphicx}
-\usepackage{academicons}
-\usepackage{xcolor}
 
 % Page layout
 \geometry{left=2cm,right=2cm,top=1.5cm,bottom=1.5cm}
@@ -33,10 +29,14 @@
 % Custom section formatting
 \titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
 \titlespacing*{\section}{0pt}{15pt}{8pt}
+\setlist[itemize]{leftmargin=15pt,itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt}
 
 % Custom commands
 \newcommand{\cvitem}[2]{\noindent\textbf{#1} \hfill #2}
 \newcommand{\cvsubitem}[1]{\noindent\textit{#1}}
+\newcommand{\cvsubbreak}{\\[-2pt]}
+\newcommand{\cventrysep}{\vspace{2pt}}
+\newcommand{\cvsectionsep}{\vspace{2pt}}
 
 \begin{document}
 
@@ -53,7 +53,7 @@
     \faGithub\ \href{https://github.com/Samson-Ho}{GitHub} & 
     \faEnvelope\ \href{mailto:b13209041@g.ntu.edu.tw}{b13209041@g.ntu.edu.tw} & 
     \faLinkedin\ \href{https://www.linkedin.com/in/sun-hsing-ho-413797205}{LinkedIn Profile} &
-    \href{https://orcid.org/0009-0002-1134-299X}{\textcolor[HTML]{A6CE39}{\aiOrcid} ORCID}
+    \href{https://orcid.org/0009-0002-1134-299X}{\textcolor[HTML]{A6CE39}{\faOrcid} ORCID}
 \end{tabular}
 \end{center}
 
@@ -62,75 +62,94 @@
 \section{Education}
 
 \cvitem{National Taiwan University, Taiwan}{September 2025 -- Present (Expected June 2028)} 
-\\
+\cvsubbreak
 \cvsubitem{Department of Atmospheric Sciences, College of Science}
-\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+\begin{itemize}
     \item Overall GPA: 3.57/4.30
 \end{itemize}
 
-\vspace{6pt}
+\cventrysep
 
 \cvitem{National Central University, Taiwan}{September 2024 -- August 2025}
-\\
+\cvsubbreak
 \cvsubitem{Department of Atmospheric Sciences, College of Earth Sciences}
-\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+\begin{itemize}
     \item Overall GPA: 3.75/4.30 (Rank2, PR94)
 \end{itemize}
 
-\vspace{6pt}
+\cvsectionsep
 
 
 % Working & Intern Experience
-\section{Working $\&$ Intern Experience}
+\section{Working \& Intern Experience}
+
+\cvitem{Summer Intern, KSL Lab}{June 2026 -- August 2026}
+\cvsubbreak
+\cvsubitem{Institute of Biomedical Sciences, Academia Sinica, Taiwan}
+\begin{itemize}
+\small\linespread{0.85}\selectfont
+    \item Dry-lab position focusing on spike data inference using ML/DL, and mathematical methods.
+\end{itemize}
+
+\cventrysep
 
 \cvitem{Adjunct Assistant, IMAQS Laboratory}{July 2025 -- February 2026}
-\\
-\cvsubitem{National Central University, Department of Atmospheric Sciences}
-\begin{itemize}[leftmargin=15pt, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\cvsubbreak
+\cvsubitem{Department of Atmospheric Sciences, National Central University, Taiwan}
+\begin{itemize}
 \small\linespread{0.85}\selectfont
     \item Build machine learning architecture - Temporal Fusion Transformer using Python on Linux workstations to evaluate model performance in Air Quailty Forecast System. Processed massive meteorological datasets and optimized model hyperparameters.
 \end{itemize}
 
-\vspace{2pt}
+\cventrysep
 
-\cvitem{Study Group: NTU Fintech Club x Kronos Research}{September 2025 -- January 2026}
-\begin{itemize}[leftmargin=15pt, itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\cvitem{Study Group: NTU Fintech Club x WorldQuant}{May 2026 -- June 2026}
+\begin{itemize}
 \small\linespread{0.85}\selectfont
-    \item Wrangled raw orderbook and tick data to mine market microstructures. Built alpha discovery pipelines and attempted volatility forecasting using Markov chain Monte Carlo. Gained hands-on experience in Commodity Trading Advisor and High Frequency Trading strategy formulation from concept to validation.
+    \item Studied academic papers to develop profit-oriented stock CTA quantitative strategies.
 \end{itemize}
 
-\vspace{6pt}
+\cventrysep
+
+\cvitem{Study Group: NTU Fintech Club x Kronos Research}{September 2025 -- January 2026}
+\begin{itemize}
+\small\linespread{0.85}\selectfont
+    \item Wrangled raw orderbook and tick data to mine market microstructures. Built volatility forecasting model using Markov chain Monte Carlo. Gained hands-on experience in High Frequency Trading strategy formulation from concept to validation.
+\end{itemize}
+
+\cvsectionsep
 
 % Academic Achievements
 \section{Academic Achievements}
 
 \noindent\textbf{University Entrance Examination Performance:}
-\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+\begin{itemize}
     \item 2023 NCU Department of Atmospheric Sciences: Special Talent Admission Program \textbf{Rank1}
     \item 2025 NTU Department of Atmospheric Sciences: Transfer Exam \textbf{Rank1}
 \end{itemize}
 
-\vspace{2pt}
+\cventrysep
 
 \noindent\textbf{Competition Results:}
-\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+\begin{itemize}
+    \item 2026 IMC Prosperity 4: \textbf{Total World Rank 31, Algorithmic World Rank 16}
     \item 2023 International Virtual Science Symposium: \textbf{3 Stars Badge, Data Scientist Badge, Impact Badge}
     \item 2023 Mathematics, Science, and Informatics Academic Ability Competition for Senior High Schools
     (Preliminary Round), Earth Science Division: \textbf{Honourable Mention}
 \end{itemize}
 
-\vspace{6pt}
+\cvsectionsep
 
 % English & Programming
-\section{English $\&$ Programming}
+\section{English \& Programming}
 \linespread{0.95}\selectfont
-\begin{itemize}[leftmargin=15pt,itemsep=2pt,topsep=2pt]
+\begin{itemize}
     \item IELTS Academic: 7.0/9.0 (C1 Level)
-    \item TOEIC Listening $\&$ Reading: 940/990 (Gold Certificate)
+    %\item TOEIC Listening \& Reading: 940/990 (Gold Certificate)
     \item \textbf{Python (Proficient)}
     \item Fortran (Intermediate)
 \end{itemize}
 
-\vspace{6pt}
+\cvsectionsep
 
 \end{document}
